@@ -1,5 +1,6 @@
-.App {
-  text-align: center;
+:root {
+  --white: 255 255 255;
+  --light-gray: 244 244 244;
 }
 
 body {
@@ -12,19 +13,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flex {
+.flex { display: flex }
+.sidebar { width: 25vw }
+.element { width: calc(75vw - 30px) }
+
+.MuiButton-root {
+  width: 100% !important;
+  min-width: 50px !important;
+  text-transform: none !important;
+}
+
+.table {
   display: flex;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.hidden { visibility: hidden; }
+.p-5 { padding: 5px !important; }
+.mt-20 { margin-top: 20px; }
